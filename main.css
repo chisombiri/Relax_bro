@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-side{
+    height: 100vh;
+    flex-basis: 40%;
+}
+
+.right-side img{
+    height: 100vh;
+    width: 100%;
+}
+
+.left-side{
+    flex-basis: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-left: 1em;
+}
+
+header{
+    flex-basis: 25%;
+    margin-top: 2em;
+    display: flex;
+    margin-left: 4em;
+}
+
+header h4{
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color: #632661;
+    align-self: flex-end;
+}
+
+.calm{
+    position: fixed;
+    z-index: -2;
+}
+
+.calm:nth-of-type(1){
+    top: 18em;
+    left: 34em;
+}
+
+.calm:nth-of-type(2){
+    top: 8em;
+    left: 28em;
+}
+
+.calm:nth-of-type(3){
+    top: 26em;
+    left: 42em;
+}
+
+.info{
+    width: 15em;
+    flex-basis: 25%;
+    margin-top: 7rem;
+    margin-left: 10em;
+    display: flex;
+    flex-flow: column;
+}
+
+.info a{
+    width: 10em;
+    text-decoration: none;
+    background-color: #632661;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+    border-radius: 1.5em;
+    font-style: bold;
+}
+
+.info a:hover,
+.info a:active{
+    color: #632661;
+    background-color: rgba(148, 128, 128, 0.3);
+}
+
+.info h1, .info h2{
+    margin-bottom: 0.8em;
+}
+
+.info p{
+    margin-bottom: 2em;
+}
+
+.info p, footer h4{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    flex-basis: 25%;
+    margin-top: 5em;
+    margin-left: 4em;
+}
+
+.info h1, .info span, footer span{
+    color: #632661;
+}
+
+@media (max-width:600px) {
+    body{
+        flex-flow: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right-side img{
+        display: none;
+    }
+
+    .left-side{
+        flex-basis: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header, .info, footer{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .info, footer{
+        align-items: center;
+        text-align: center;
+    }
+
+    .info{
+        width: 15em;
+        margin-top: 7em;
+    }
+
+    .info h1, .info h2{
+        margin-bottom: 2em;
+    }
+    
+    .info p{
+        margin-bottom: 5em;
+    }
+
+    header h4{
+        align-self: flex-end;
+    }
+
+    footer{
+        margin-top: 14em;
+    }
+
+    .calm{
+        z-index: -3;
+    }
+
+    .calm:nth-of-type(1){
+        top: 40em;
+        left: 4em;
+    }
+    
+    .calm:nth-of-type(2){
+        top: 32em;
+        left: 1em;
+    }
+    
+    .calm:nth-of-type(3){
+        top: 42em;
+        left: 20em;
+    }
+}
