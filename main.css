@@ -5,19 +5,20 @@
 }
 
 body{
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     font-family: 'Lato', sans-serif;
+    overflow: hidden;
 }
 
 .right-side{
-    height: 100vh;
+    height: 100%;
     flex-basis: 40%;
 }
 
 .right-side img{
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -44,8 +45,9 @@ header h4{
 }
 
 .calm{
-    position: fixed;
+    position: absolute;
     z-index: -2;
+    opacity: 0.5;
 }
 
 .calm:nth-of-type(1){
