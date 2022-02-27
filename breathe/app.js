@@ -1,5 +1,9 @@
 const container = document.querySelector('#container');
 const text = document.querySelector('.text');
+const audio = document.querySelector('audio');
+const toggleSoundBtn = document.querySelector('#toggleSound');
+
+//Declared new variables for time
 const totalTime = 8000;
 const breathTime = (totalTime/4.8) * 2;
 const holdTime = (totalTime/4.8);
@@ -21,3 +25,10 @@ function breathAnimate() {
 }
 
 setInterval(breathAnimate, totalTime);
+
+audio.play();
+audio.muted = true;
+ 
+toggleSoundBtn.addEventListener('click', () => {
+  audio.muted = !audio.muted;
+});
