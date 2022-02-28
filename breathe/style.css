@@ -126,11 +126,10 @@ h1{
 #toggleSound {
     color: #f8f0f8;
     background-color: #632661;
-    border: 0;
-    outline: 0;
     border-radius: 1.5em;
     cursor: pointer;
-    padding: 10px;
+    text-decoration: none;
+    padding: 0.6em 1em;
     margin-left: 1.5em;
 }
 
