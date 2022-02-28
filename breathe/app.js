@@ -29,6 +29,6 @@ setInterval(breathAnimate, totalTime);
 audio.play();
 audio.muted = true;
  
-toggleSoundBtn.addEventListener('click', () => {
+toggleSoundBtn.addEventListener('click', (e) => {
   audio.muted = !audio.muted;
 });
